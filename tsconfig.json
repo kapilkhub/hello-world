@@ -3,7 +3,10 @@
   "compilerOptions": {
     "removeComments": true,
     "lib": ["ES2018","DOM"],
-    "sourceMap": true
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./dist"
    // "outFile": "app/index.js"
   },
   "include": ["src/**/*", "lib"],
