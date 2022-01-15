@@ -2,6 +2,6 @@ export interface TicketSchema
 {
     ticketId: string;
     concertName: string;
-    quantity:string;
+    quantity:number;
     price:number;
 }

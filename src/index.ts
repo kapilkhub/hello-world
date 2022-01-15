@@ -1,7 +1,14 @@
-import {Main} from "./app/Main"
+import {Main} from "./app/Main";
+import {defaultState} from "./defaultState";
 
-const message: string ="Hello Typescript. What are you doing";
+const renderApp = ()=>{
 
-console.log(message);
+    const rendered : string = new Main(defaultState).render();
+    const element = document.getElementById("App")
+    if(element){
+        element.innerHTML = rendered;
+    }
 
-new Main().render();
+}
+
+renderApp();

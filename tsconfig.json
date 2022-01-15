@@ -2,10 +2,11 @@
   "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
     "removeComments": true,
-    "lib": ["ES2018","DOM"]
+    "lib": ["ES2018","DOM"],
+    "sourceMap": true
    // "outFile": "app/index.js"
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "lib"],
   "watchOptions": {
     "excludeDirectories": ["**/node_modules","app"]
   },
